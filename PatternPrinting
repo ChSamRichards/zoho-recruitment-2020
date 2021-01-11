@@ -1,0 +1,36 @@
+package Hello;
+import java.util.Scanner;
+
+public class PatternPrinting {
+	//method to print desired pattern
+	public void printPattern(int n)
+	{
+		for(int i=n;i>=1;i--) 
+        {     
+            for(int j=n;j>=1;j--) 
+            { 
+                if(i>=j) 
+                { 
+                    System.out.print(i); 
+                } 
+                else 
+                { 
+                    System.out.print(j); 
+                } 
+            } 
+            System.out.println(); 
+        } 
+	}
+
+	public static void main(String[] args) {
+		
+	        Scanner sc = new Scanner(System.in);
+	        // input from user to print matrix
+	        System.out.print("enter the input for matrix printing");
+	        int n = sc.nextInt();
+	        //object for class
+	        PatternPrinting pp = new PatternPrinting();
+	        pp.printPattern(n);
+	    }
+		
+}
